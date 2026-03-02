@@ -37,6 +37,12 @@ See `AGENT_INSTRUCTIONS.md` and `agents/README.md` for guidance.
 - [ ] API assumptions are documented
 - [ ] Output is limited to data definitions and types
 
+## Verification
+- [ ] Run the build command -- project compiles without TypeScript errors
+- [ ] Confirm all entity types are importable from the types directory
+- [ ] If using Zod schemas: verify inferred types match entity interfaces
+- [ ] Start the dev server -- pages that reference data types still render (even without data)
+
 ## Notes / common pitfalls
 - If there is no data model, skip this phase.
 - Avoid overfitting to one provider.

@@ -37,6 +37,13 @@ See `AGENT_INSTRUCTIONS.md` and `agents/README.md` for guidance.
 - [ ] Shared components are extracted and reusable
 - [ ] Output includes page and component structure updates
 
+## Verification
+- [ ] Start the dev server -- no errors in terminal output
+- [ ] Navigate to every route defined in `docs/ui-structure.md` -- each page renders
+- [ ] Click between routes -- navigation works without full page reloads
+- [ ] Check browser console on each route -- no errors
+- [ ] Confirm stubbed pages show placeholder content (not blank)
+
 ## Notes / common pitfalls
 - If structure is already defined, skip this phase.
 - Keep modules thin; avoid premature feature logic.

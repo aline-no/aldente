@@ -37,6 +37,13 @@ See `AGENT_INSTRUCTIONS.md` and `agents/README.md` for guidance.
 - [ ] Access control is enforced
 - [ ] Output includes email templates and admin routes
 
+## Verification
+- [ ] Run the build command -- project compiles without errors
+- [ ] Start the dev server -- admin routes render
+- [ ] Email templates render with sample data (preview or test send)
+- [ ] Admin access controls work (protected if auth exists, gated locally if not)
+- [ ] Check browser console -- no errors on admin or email preview routes
+
 ## Notes / common pitfalls
 - If email/admin is not needed, skip this phase.
 - Avoid hardcoding provider-specific logic.

@@ -37,6 +37,13 @@ See `AGENT_INSTRUCTIONS.md` and `agents/README.md` for guidance.
 - [ ] Provider setup is documented where needed
 - [ ] Output includes data flow wiring and backend integration points
 
+## Verification
+- [ ] Run the build command -- project compiles without errors
+- [ ] Start the dev server -- no errors in terminal output
+- [ ] Navigate to pages with data -- they render loading states, then data (or empty states if no backend)
+- [ ] If using mocks (`VITE_MOCK_API=true`): confirm mock data appears in the UI
+- [ ] Check browser console -- no failed network requests (unless backend is intentionally unavailable)
+
 ## Notes / common pitfalls
 - If there is no DB or backend, skip this phase.
 - Avoid coupling UI too tightly to a single provider.

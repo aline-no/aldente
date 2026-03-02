@@ -89,11 +89,14 @@ How to replace:
 ## Recommended workflow
 - Paste one phase prompt at a time.
 - Attach the relevant `docs/*` files as context inputs.
+- Read `skills/build-session.md` for the full session protocol (start, execute, verify, handoff).
 - After each phase:
+  - Complete the phase's **Verification** section (each prompt has one).
+  - Run the quality gate in `skills/code-review.md`.
   - Commit or checkpoint changes.
-  - Run a quick code audit for that phase (remove dead code, validate routing, check role guards).
-  - Verify routes, data flow, and basic UI structure.
   - Keep the file structure stable before moving to the next phase.
+- For phases that wire data (4-5), also read `skills/api-wiring.md` for API client and mock data patterns.
+- For phases that touch UI, use `skills/frontend-qa.md` for screenshots, accessibility, and performance checks.
 
 ## Phase runner template (tool-agnostic)
 Use this copy block in any tool:

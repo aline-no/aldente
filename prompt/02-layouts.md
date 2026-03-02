@@ -37,6 +37,12 @@ See `AGENT_INSTRUCTIONS.md` and `agents/README.md` for guidance.
 - [ ] Layouts map to `docs/ui-structure.md`
 - [ ] Output is limited to layout and shell structure
 
+## Verification
+- [ ] Start the dev server -- no errors in terminal output
+- [ ] Navigate to each primary route -- layouts render without blank screens
+- [ ] Resize the browser to mobile width -- layout responds (no horizontal scroll, no overlapping elements)
+- [ ] Check browser console -- no errors or warnings on any route
+
 ## Notes / common pitfalls
 - If layouts are already complete, skip this phase.
 - Avoid hardcoding content; use placeholders or generic copy.

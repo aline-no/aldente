@@ -1,45 +1,47 @@
 # Assets
 
-Purpose: list all required brand and product assets for `{{PRODUCT_NAME}}` so design and build phases have a clear checklist.
+Purpose: track visual and legal assets needed for `{{PRODUCT_NAME}}` so phases that depend on them (setup, design system, launch audit) have a single reference.
 
 ## Template
-### Brand
-- Logo primary (SVG)
-- Logo mark (SVG)
-- Wordmark (SVG)
-- Favicon (SVG/PNG)
-- App icon (PNG, 1024x1024)
 
-### Marketing
-- OG image(s) (1200x630)
-- Social preview variants
-- Hero image or illustration
-- Testimonial avatars (if used)
+### Brand assets
+- Logo (SVG + PNG): `[path or URL]`
+- Favicon (ICO + SVG): `[path or URL]`
+- OG image (1200x630): `[path or URL]`
+- App icon (if applicable): `[path or URL]`
 
-### Product UI
-- Empty states
-- Loading states
-- Error states
-- Illustration set (if any)
+### Empty state illustrations
+- No data / first-time: `[path or description]`
+- No results (search/filter): `[path or description]`
+- Error state: `[path or description]`
+- Success / completion: `[path or description]`
 
-### Legal and SEO (optional)
-- Privacy policy PDF or page copy
-- Terms of service PDF or page copy
-- OpenGraph images for key pages
+### Legal content
+- Privacy policy: `[drafted / placeholder / URL]`
+- Terms of service: `[drafted / placeholder / URL]`
+- Cookie policy (if applicable): `[drafted / placeholder / URL]`
 
-### File formats and naming
-- Preferred formats: SVG for logos/icons, PNG/JPG for imagery
-- Naming convention: `{{PRODUCT_NAME}}-asset-name.ext`
-- Storage location: `/public` or equivalent
+### Third-party assets
+- Font files or CDN links: `[list]`
+- Icon library: `[e.g., Lucide, Heroicons]`
+- Stock images or illustrations: `[source and license]`
+
+## Notes
+- Keep paths relative to the repo root where possible.
+- Mark assets as `placeholder` if using temporary versions during build phases.
+- Replace all placeholders before Phase 11 (launch audit).
 
 ## Example
-Brand
-- Logo primary: `{{PRODUCT_NAME}}-logo.svg`
-- Favicon: `{{PRODUCT_NAME}}-favicon.png`
 
-Marketing
-- OG image: `{{PRODUCT_NAME}}-og.png`
-- Hero: `{{PRODUCT_NAME}}-hero.png`
+Brand assets
+- Logo: `public/logo.svg`
+- Favicon: `public/favicon.ico`
+- OG image: `public/og-image.png`
 
-Product UI
-- Empty state: `{{PRODUCT_NAME}}-empty.png`
+Empty state illustrations
+- No data: inline SVG placeholder (replace in Phase 10)
+- Error state: generic error component with icon
+
+Legal content
+- Privacy policy: placeholder (draft before launch)
+- Terms of service: placeholder (draft before launch)

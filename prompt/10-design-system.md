@@ -35,6 +35,14 @@ See `AGENT_INSTRUCTIONS.md` and `agents/README.md` for guidance.
 - [ ] Accessibility basics are covered
 - [ ] Output includes style updates and component refinement
 
+## Verification
+- [ ] Run the build command -- project compiles without errors
+- [ ] Start the dev server -- visually inspect key pages (screenshot recommended)
+- [ ] Check responsive behavior -- mobile and tablet viewports render correctly
+- [ ] Run accessibility audit (`npx axe http://localhost:5173/`) -- no critical or serious violations
+- [ ] Verify focus states -- tab through interactive elements, confirm visible focus indicators
+- [ ] Check consistency -- marketing and app views use the same tokens
+
 ## Notes / common pitfalls
 - If a design system already exists, skip this phase.
 - Avoid styling one-off screens differently.

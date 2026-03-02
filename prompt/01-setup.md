@@ -83,6 +83,13 @@ If you want to use a router layout, you can also wrap the top-level layout compo
 - [ ] API wrapper exists at `src/lib/api.ts`
 - [ ] Shared API types exist at `src/types/api.ts`
 
+## Verification
+- [ ] Run the build command -- project compiles without errors
+- [ ] Start the dev server -- no errors in terminal output
+- [ ] Open the root route in a browser -- page renders (not blank)
+- [ ] Check browser console -- no errors or failed requests
+- [ ] Confirm `ErrorBoundary` catches a thrown error (temporarily throw in a component, verify fallback renders)
+
 ## Notes / common pitfalls
 - If this phase does not apply (existing mature project), skip it.
 - Avoid over-building; focus on a clean foundation.

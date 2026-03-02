@@ -36,6 +36,14 @@ See `AGENT_INSTRUCTIONS.md` and `agents/README.md` for guidance.
 - [ ] Session state is stable across reloads
 - [ ] Output includes auth wiring and route guards
 
+## Verification
+- [ ] Run the build command -- project compiles without errors
+- [ ] Start the dev server -- login and signup pages render
+- [ ] Complete login flow -- session is established, protected route is accessible
+- [ ] Reload a protected page -- session persists, user is not logged out
+- [ ] Visit a protected route while logged out -- user is redirected to login
+- [ ] Check browser console -- no auth-related errors
+
 ## Notes / common pitfalls
 - If no auth is required, skip this phase.
 - Avoid mixing auth logic with business logic.

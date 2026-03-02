@@ -57,6 +57,14 @@ Skip this phase if you do not need CMS content management or an admin surface.
 - [ ] Access controls are explicit and safe
 - [ ] All `docs/*` references are valid
 
+## Verification
+- [ ] Run the build command -- project compiles without errors
+- [ ] Start the dev server -- navigate to `/admin` -- page renders (or access denied if not authorized)
+- [ ] If auth exists: confirm admin routes require admin role
+- [ ] If no auth: confirm admin routes show a non-production warning
+- [ ] Create or edit a content item -- changes persist (or confirm stub behavior)
+- [ ] Check browser console -- no errors on admin routes
+
 ## Notes / common pitfalls
 - Avoid building a full CMS; keep it minimal and fit-for-purpose.
 - Do not expose admin without explicit gating and warnings.

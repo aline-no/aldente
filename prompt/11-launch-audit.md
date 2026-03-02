@@ -41,6 +41,14 @@ Skip this phase if you are not approaching launch or do not need a structured au
 - [ ] Code audit checklist is included
 - [ ] All `docs/*` references are valid
 
+## Verification
+- [ ] Run full build -- project compiles and builds for production without errors
+- [ ] Run Lighthouse audit on key pages -- performance > 70, accessibility > 90, best practices > 80
+- [ ] Run accessibility audit (`npx axe`) on all public pages -- no critical or serious violations
+- [ ] Search codebase for `{{` -- no unresolved placeholders remain
+- [ ] Confirm all legal pages render and are linked from the footer
+- [ ] Confirm rollback plan is documented and tested
+
 ## Notes / common pitfalls
 - Do not ship with placeholder content or empty legal pages.
 - Avoid last-minute scope changes; fix only launch blockers.

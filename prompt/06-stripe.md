@@ -37,6 +37,13 @@ See `AGENT_INSTRUCTIONS.md` and `agents/README.md` for guidance.
 - [ ] Billing settings surface is available
 - [ ] Output includes billing flow and integration points
 
+## Verification
+- [ ] Run the build command -- project compiles without errors
+- [ ] Start the dev server -- navigate to the pricing/checkout page, confirm it renders
+- [ ] Trigger checkout flow -- confirm redirect to payment provider or inline form loads
+- [ ] Verify post-purchase state -- confirmation page or success state renders
+- [ ] Check browser console -- no errors related to billing integration
+
 ## Notes / common pitfalls
 - If there is no paid plan, skip this phase.
 - Avoid mixing billing concerns with unrelated features.
