@@ -6,6 +6,8 @@ Technical decisions that affect structure, infrastructure, or patterns. One entr
 
 Build agents read this before making implementation choices. Do not override an accepted ADR without updating this file first.
 
+For teams that want enforceable ADRs — pre-commit hooks, CI/CD validation, and agent plugins that automatically read decisions before generating code — see [Archgate](https://github.com/archgate/cli).
+
 ---
 
 ## Template
