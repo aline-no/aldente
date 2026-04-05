@@ -50,7 +50,11 @@ Aldente covers discovery → build. Two external tools extend the workflow for t
 
 ## Works with
 
-Codex, Claude Code, Cursor, Lovable, and other AI-assisted builders. The phases are the same — only execution mechanics differ.
+**[Claude Code](agents/claude-code.md)** — best for complex multi-phase builds and iterative refactors. Includes a skills-friendly workflow loop, guard rails, and phase-by-phase reasoning. Recommended for production builds.
+
+**[Lovable](agents/lovable.md)** — best for UI scaffolding and rapid iteration. Paste the phase prompt, attach the docs, review and repeat. Strong for Phases 01-03 and 10.
+
+Also works with Codex, Cursor, and other AI-assisted builders. The phases are the same — only execution mechanics differ. See [agents/](agents/) for all adapters.
 
 ## Get started
 
