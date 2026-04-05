@@ -28,6 +28,7 @@ The phases are the same; only execution mechanics differ.
 2. Decide your build tool (Codex, Claude Code, Cursor, Lovable, or another agent).
 3. Fill out `docs/` in this order:
    - [docs/prd.md](docs/prd.md) — **start here**. Problem, users, scope, user stories. Mark `status: active` before Phase 01.
+   - [docs/adr.md](docs/adr.md) — technical architecture decisions. Add entries as significant choices are made during the build.
    - [docs/content-pages.md](docs/content-pages.md)
    - [docs/journeys.md](docs/journeys.md)
    - [docs/ui-structure.md](docs/ui-structure.md)

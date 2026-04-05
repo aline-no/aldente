@@ -9,6 +9,7 @@
 ## How phases are executed
 - Before reading any other docs, check for `docs/prd.md`. If it exists and `status: active`, read it first — it is the source of truth for scope, users, and acceptance criteria.
 - If `docs/prd.md` is missing or `status: draft`, stop and ask before proceeding. Do not infer scope from other docs.
+- Check for `docs/adr.md`. If it exists, read it before making any infrastructure, library, or pattern choices. Do not override an accepted ADR without flagging it first.
 - Read the required `docs/*` inputs for the phase.
 - Follow the phase prompt tasks step-by-step.
 - Update only the files needed for that phase.
