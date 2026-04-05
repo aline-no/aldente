@@ -7,7 +7,9 @@
 - Prefer small, phase-scoped changes.
 
 ## How phases are executed
-- Read the required `docs/*` inputs first.
+- Before reading any other docs, check for `docs/prd.md`. If it exists and `status: active`, read it first — it is the source of truth for scope, users, and acceptance criteria.
+- If `docs/prd.md` is missing or `status: draft`, stop and ask before proceeding. Do not infer scope from other docs.
+- Read the required `docs/*` inputs for the phase.
 - Follow the phase prompt tasks step-by-step.
 - Update only the files needed for that phase.
 - Each phase includes a **Verification** section. Complete it before marking the phase done.

@@ -30,6 +30,7 @@ src/
 components/
 ui/         // shadcn/ui + shared primitives only
 features/   // feature-level components grouped by domain
+contexts/     // shared React contexts (cross-cutting only, not feature state)
 hooks/        // reusable React hooks
 lib/          // utilities (fetchers, formatters, config)
 types/        // shared TypeScript types (DTOs, domain types)

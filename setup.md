@@ -15,21 +15,25 @@ The phases are the same; only execution mechanics differ.
 ## Recommended stack (default)
 - Frontend: React + Vite
 - Styling: Tailwind CSS + shadcn/ui
+- Routing: React Router
+- Data fetching: TanStack Query
 - Backend/DB: Supabase (or any Postgres-compatible provider)
-- Auth: Supabase Auth or Clerk
+- Auth: Supabase Auth or StackAuth
 - Payments: Stripe
 - Email: Resend or Postmark
+- Testing: Vitest (unit) + Playwright (e2e)
 
 ## Quick start
 1. Clone or fork the repo.
 2. Decide your build tool (Codex, Claude Code, Cursor, Lovable, or another agent).
 3. Fill out `docs/` in this order:
-   - [docs/assets.md](docs/assets.md)
-   - [docs/design-guidelines.md](docs/design-guidelines.md)
-   - [docs/ui-structure.md](docs/ui-structure.md)
+   - [docs/prd.md](docs/prd.md) — **start here**. Problem, users, scope, user stories. Mark `status: active` before Phase 01.
    - [docs/content-pages.md](docs/content-pages.md)
    - [docs/journeys.md](docs/journeys.md)
+   - [docs/ui-structure.md](docs/ui-structure.md)
+   - [docs/design-guidelines.md](docs/design-guidelines.md)
    - [docs/data-models.md](docs/data-models.md)
+   - [docs/assets.md](docs/assets.md)
    - [docs/schema-initial.sql](docs/schema-initial.sql) (optional)
    - [docs/schema-cms.sql](docs/schema-cms.sql) (optional)
 4. Run the prompts in `prompt/` in order (default):
@@ -58,6 +62,7 @@ How to replace:
 - Manual find/replace is enough. Use repo-wide search for `{{` to catch all placeholders.
 
 ## Preparation checklist
+- PRD ready: `docs/prd.md` filled with problem, users, scope, user stories — `status: active`
 - Product basics: name, one-liner, audience
 - Feature scope and pages
 - Design direction and tone
@@ -68,7 +73,7 @@ How to replace:
 ## Phase map
 | Phase file | When to use | Inputs required | Output expectation |
 | --- | --- | --- | --- |
-| [prompt/01-setup.md](prompt/01-setup.md) | Starting a new build | [setup.md](setup.md), all [docs/](docs/) you have so far | Repo conventions, tooling decisions, baseline architecture |
+| [prompt/01-setup.md](prompt/01-setup.md) | Starting a new build | [docs/prd.md](docs/prd.md) (required, must be active), [setup.md](setup.md), all other [docs/](docs/) you have so far | Repo conventions, tooling decisions, baseline architecture |
 | [prompt/02-layouts.md](prompt/02-layouts.md) | After setup | [docs/ui-structure.md](docs/ui-structure.md), [docs/design-guidelines.md](docs/design-guidelines.md) | App shell, layouts, responsive structure |
 | [prompt/03-structure.md](prompt/03-structure.md) | After layouts | [docs/ui-structure.md](docs/ui-structure.md), [docs/content-pages.md](docs/content-pages.md), [docs/journeys.md](docs/journeys.md) | Route structure and component boundaries |
 | [prompt/04-data-model.md](prompt/04-data-model.md) | When data entities are known | [docs/data-models.md](docs/data-models.md), optional [docs/schema-initial.sql](docs/schema-initial.sql) and [docs/schema-cms.sql](docs/schema-cms.sql) | Types/entities and API assumptions |
