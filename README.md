@@ -1,4 +1,4 @@
-![Aldente boilerplate header](images/aldente-boilerplate.webp)
+![Aldente boilerplate header](images/aldente-boilerplate.png)
 
 # Aldente
 
