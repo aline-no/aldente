@@ -65,3 +65,7 @@ For AI agents: [AGENT_INSTRUCTIONS.md](AGENT_INSTRUCTIONS.md) and [agents/shared
 ## License
 
 MIT. See `LICENSE`.
+
+---
+
+Aldente is created and maintained by [Line Hjartarson](https://www.linkedin.com/in/linehjartarson/) at [Aline](https://aline.no).
