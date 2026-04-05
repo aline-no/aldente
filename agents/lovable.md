@@ -2,17 +2,27 @@
 
 See [shared-protocol.md](shared-protocol.md) for the standard starter prompt and phase runner protocol.
 
-Lovable is strong for UI scaffolding and rapid iteration with structured prompts and attached context. Best for Phases 01-03 (scaffold, layouts, structure) and Phase 10 (design system polish). One prompt at a time — the phase structure is critical.
+Lovable is strong for UI scaffolding and rapid iteration with structured prompts and attached context. Best for Phases 01-03 (scaffold, layouts, structure) and Phase 10 (design system polish).
+
+## Plan mode
+
+Lovable's plan mode shows a proposed plan before executing. Use it — it changes the workflow meaningfully:
+
+- Review the plan before approving. Check it matches the phase scope and hasn't pulled in out-of-scope work.
+- If the plan includes changes outside the phase boundary, reject it and tighten the prompt before rerunning.
+- Plan mode makes the one-phase-at-a-time discipline easier to enforce: you can see what's coming rather than cleaning up after it.
+
+The original constraint of "one small prompt at a time" was a workaround for unpredictable output. With plan mode, you can give the full phase prompt and use the plan review as your control point instead.
 
 ## How to run a phase
 
 1. Read `docs/prd.md` and `docs/adr.md` before starting. Know the scope and any locked technical decisions.
 2. Copy a phase prompt from `prompt/` (e.g., `prompt/02-layouts.md`).
-3. Paste it into Lovable as the task.
+3. Paste it into Lovable as the task. Enable plan mode.
 4. Attach the `docs/*` files listed in the phase as context.
    - If context limits apply, prioritise: `docs/prd.md`, `docs/ui-structure.md`, `docs/journeys.md`, `docs/design-guidelines.md`.
-5. Review the output. If it drifts from the phase scope, rerun with a tighter prompt.
-6. Complete the phase's Verification section before moving on.
+5. Review the plan. Approve only if it stays within the phase scope.
+6. Review the output and complete the phase's Verification section before moving on.
 
 Commit or checkpoint after each phase.
 
