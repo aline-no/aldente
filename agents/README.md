@@ -1,6 +1,6 @@
 # Agent Adapters
 
-AlDente has one canonical set of prompts in `phases/`. Pick your tool and follow the adapter guide for how to run each phase.
+Aldente has one canonical set of phase instructions in `phases/`. Pick your tool and follow the adapter guide for how to run each phase.
 
 ## Shared protocol
 
