@@ -20,7 +20,7 @@ Before running Phase 01, you need:
 
 Fill `docs/prd.md` first. It's the source of truth that all other docs derive from. Phase 01 should not start until the PRD is marked `status: active`.
 
-If the product isn't defined yet, define it before opening this repo.
+If the product isn't defined yet, define it before opening this repo. For a structured discovery and PRD authoring workflow that feeds directly into Aldente, see [prd-please](https://github.com/yesplease-studio/prd-please).
 
 ## What you get
 - **[docs/](docs/)** -- product definition templates (what to build) — start with `docs/prd.md`
