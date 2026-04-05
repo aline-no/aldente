@@ -17,7 +17,7 @@ The original constraint of "one small prompt at a time" was a workaround for unp
 ## How to run a phase
 
 1. Read `docs/prd.md` and `docs/adr.md` before starting. Know the scope and any locked technical decisions.
-2. Copy a phase prompt from `prompt/` (e.g., `prompt/02-layouts.md`).
+2. Copy a phase prompt from `phases/` (e.g., `phases/02-layouts.md`).
 3. Paste it into Lovable as the task. Enable plan mode.
 4. Attach the `docs/*` files listed in the phase as context.
    - If context limits apply, prioritise: `docs/prd.md`, `docs/ui-structure.md`, `docs/journeys.md`, `docs/design-guidelines.md`.

@@ -10,7 +10,7 @@ Claude Code is strong at iterative refactors and detailed reasoning when impleme
 1. Paste the starter prompt from `agents/shared-protocol.md`.
 2. Read `AGENT_INSTRUCTIONS.md`.
 3. Read the relevant `docs/*` inputs for the phase.
-4. Execute exactly one `prompt/XX-*.md`.
+4. Execute exactly one `phases/XX-*.md`.
 5. Complete the phase's Verification section.
 6. Run the quality gate (`skills/code-review.md`).
 7. Output a summary of changes + acceptance criteria pass/fail + blockers only if required.
@@ -33,7 +33,7 @@ Commit after each phase.
 
 ## How to run a phase
 
-1. Open the phase file in `prompt/` (e.g., `prompt/03-structure.md`).
+1. Open the phase file in `phases/` (e.g., `phases/03-structure.md`).
 2. Provide the phase prompt as the instruction.
 3. Supply the `docs/*` inputs listed in that phase.
 4. Keep the docs visible for the entire run to avoid drift.

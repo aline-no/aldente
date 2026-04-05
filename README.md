@@ -23,7 +23,7 @@ If the product isn't defined yet, define it before opening this repo. For a stru
 | Folder | Purpose |
 |--------|---------|
 | `docs/` | Product definition templates — start with `prd.md`, then `adr.md` as technical decisions are made |
-| `prompt/` | 11 phased implementation prompts |
+| `phases/` | 11 phased implementation prompts |
 | `skills/` | Operational guides for agents: session protocol, quality gates, API patterns, QA |
 | `agents/` | Tool-specific adapters for Claude Code, Cursor, Codex, Lovable |
 

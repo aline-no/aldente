@@ -6,7 +6,7 @@ Codex is good at implementing structured changes across multiple files and keepi
 
 ## How to run a phase
 
-1. Open the phase file in `prompt/` (e.g., `prompt/02-layouts.md`).
+1. Open the phase file in `phases/` (e.g., `phases/02-layouts.md`).
 2. Provide the phase prompt to Codex as the task.
 3. Attach or reference the relevant `docs/*` files listed in the phase.
 4. If unsure which docs, attach `docs/ui-structure.md`, `docs/design-guidelines.md`, and `docs/journeys.md` as baseline context.

@@ -8,7 +8,7 @@ See `AGENT_INSTRUCTIONS.md` and `agents/README.md` for guidance.
 ## Goal
 - Establish repo conventions for `{{PRODUCT_NAME}}`
 - Decide baseline architecture and tooling
-- Align on how `docs/` and `prompt/` are used
+- Align on how `docs/` and `phases/` are used
 
 ## Inputs
 - `setup.md`
