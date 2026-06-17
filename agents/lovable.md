@@ -12,7 +12,7 @@ Lovable's plan mode shows a proposed plan before executing. Use it — it change
 - If the plan includes changes outside the phase boundary, reject it and tighten the prompt before rerunning.
 - Plan mode makes the one-phase-at-a-time discipline easier to enforce: you can see what's coming rather than cleaning up after it.
 
-The original constraint of "one small prompt at a time" was a workaround for unpredictable output. With plan mode, you can give the full phase prompt and use the plan review as your control point instead.
+The original constraint of "one small prompt at a time" was a workaround for unpredictable output. With plan mode, you can give the full phase prompt and use the plan review as your control point instead. This upgrades the prompt size, not the discipline: still one phase at a time. Plan mode is not a place to paste all phases and approve the whole build at once.
 
 ## How to run a phase
 

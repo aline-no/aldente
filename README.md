@@ -2,9 +2,13 @@
 
 # Aldente
 
-**A SaaS boilerplate for building with AI-assisted tools.** Fill the docs, run the phases, ship a clean app — without rebuilding the fundamentals every time.
+**A SaaS boilerplate for building with AI-assisted tools.** Fill the docs, run the phases, ship a clean app, without rebuilding the fundamentals every time.
 
 Aldente is the **build layer**. It gives you product definition templates, phased implementation prompts, and operational guides for agents. It stays product-agnostic and tooling-flexible.
+
+## How it works
+
+Aldente is deliberately not a one-shot build. You run the phases one at a time: paste a phase, review the plan, build, run that phase's check, then move on. Each phase builds on a verified previous one. Plan mode is your review point for a single phase, not a place to approve the whole build at once. This is what keeps the output clean instead of spaghetti.
 
 ## Before you start
 
