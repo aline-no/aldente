@@ -29,9 +29,9 @@ If the product isn't defined yet, define it before opening this repo. For a stru
 
 ## Recommended stack (default)
 
-- Frontend: React + Vite
+- Frontend: React, via TanStack Start (SSR) or Vite (SPA)
 - Styling: Tailwind CSS + shadcn/ui
-- Routing: React Router
+- Routing: TanStack Router (or React Router for an SPA)
 - Data fetching: TanStack Query
 - Backend/DB: Supabase (or any Postgres-compatible provider)
 - Auth: Supabase Auth or StackAuth
@@ -39,7 +39,7 @@ If the product isn't defined yet, define it before opening this repo. For a stru
 - Email: Resend or Postmark
 - Testing: Vitest (unit) + Playwright (e2e)
 
-Stack is a default, not a requirement. The method is tool-agnostic.
+Stack is a default, not a requirement. The method is tool-agnostic. SSR (TanStack Start) is the current default because it gives server-rendered marketing pages and SEO out of the box, so there's no need to split marketing off into a separate app.
 
 ## Extends with
 

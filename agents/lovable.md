@@ -34,8 +34,10 @@ Commit or checkpoint after each phase.
 
 ## What to hand off to Claude Code
 
-- Phases 04-05: data model and DB flow wiring (Supabase, SQL, typed hooks)
-- Phase 07: auth flows, protected routes, role-based access
+Build mode (agentic multi-step builds) has loosened this boundary. Lovable can now carry more of the data and auth phases itself, so try it in build mode first and hand off only when it stalls.
+
+- Phases 04-05: data model and DB flow wiring (Supabase, SQL, typed hooks) — workable in build mode, hand off if types or schema drift
+- Phase 07: auth flows, protected routes, role-based access — workable in build mode for standard flows
 - Anything requiring precise TypeScript types, complex state, or multi-file refactors
 
 ## Guard rails
@@ -50,5 +52,6 @@ Commit or checkpoint after each phase.
 - Running phases without the required docs attached
 - Over-polishing visuals before the design system phase (Phase 10)
 - Forgetting to update docs when Lovable makes assumptions that deviate from them
-- Mixing marketing and app routes unintentionally
 - Letting Lovable carry state assumptions across phases — it doesn't remember
+
+On the SSR stack (TanStack Start), marketing pages are server-rendered and SEO is handled by default, so marketing and app can share one project. Use the SEO scan to verify rather than wiring meta tags by hand, and there's no longer a reason to split marketing off into a separate app.

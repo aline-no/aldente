@@ -13,15 +13,17 @@ A docs + phases boilerplate for building SaaS products with AI-assisted builders
 The phases are the same; only execution mechanics differ.
 
 ## Recommended stack (default)
-- Frontend: React + Vite
+- Frontend: React, via TanStack Start (SSR) or Vite (SPA)
 - Styling: Tailwind CSS + shadcn/ui
-- Routing: React Router
+- Routing: TanStack Router (or React Router for an SPA)
 - Data fetching: TanStack Query
 - Backend/DB: Supabase (or any Postgres-compatible provider)
 - Auth: Supabase Auth or StackAuth
 - Payments: Stripe
 - Email: Resend or Postmark
 - Testing: Vitest (unit) + Playwright (e2e)
+
+SSR (TanStack Start) is the current default. It server-renders marketing pages and handles SEO out of the box, so marketing and app can live in one project.
 
 ## Quick start
 1. Clone or fork the repo.

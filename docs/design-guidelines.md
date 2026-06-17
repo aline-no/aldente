@@ -41,7 +41,7 @@ Purpose: define the visual system and rules for `{{PRODUCT_NAME}}` so layouts an
 ## Example
 Brand tone
 - Modern, calm, trustworthy
-- References: Linear, Vercel, Raycast
+- References: Framer, Pitch, Tana
 
 Tokens
 - Primary: #1E1E1E, Accent: #3B82F6, Neutral: #F5F5F5

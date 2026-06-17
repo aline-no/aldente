@@ -91,6 +91,7 @@ Legal pages
 SEO + OpenGraph (if marketing pages exist)
 - [ ] Titles and meta descriptions set
 - [ ] OG images present for key pages
+- On an SSR stack (TanStack Start), pages are server-rendered and most SEO is handled for you. Use the builder's SEO scan to verify rather than wiring meta tags by hand.
 
 Rollback plan + backups
 - [ ] Rollback steps documented
