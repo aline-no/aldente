@@ -47,10 +47,11 @@ Stack is a default, not a requirement. The method is tool-agnostic. SSR (TanStac
 
 ## Extends with
 
-Aldente covers discovery → build. Two external tools extend the workflow for teams that need more:
+Aldente covers discovery → build. Three tools extend the workflow for teams that need more:
 
 - **[prd-please](https://github.com/yesplease-studio/prd-please)** — structured discovery and PRD authoring before Aldente. Produces a Strategic PRD that feeds directly into `docs/prd.md`.
 - **[Archgate](https://github.com/archgate/cli)** — enforces ADRs via pre-commit hooks and CI/CD. Adds a `.rules.ts` enforcement layer on top of Aldente's lightweight `docs/adr.md`.
+- **[Allot](https://github.com/aline-no/allot)** (private for now) is the hardening kit for after launch. It takes an existing app from prototype to production in levels, from CI gates and secret and dependency scans to environments, promotion and rollback. Aldente keeps baseline CI, Allot owns everything past launch.
 
 ## Works with
 

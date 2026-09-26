@@ -107,3 +107,6 @@ Rollback plan + backups
 - Rate limiting: note endpoints that need throttling
 - DX cleanup: dead code, TODOs, naming consistency, folder hygiene
 - Accessibility: keyboard navigation, focus states, labels, contrast
+
+## After launch
+This phase gets an app to launch. Hardening it for real users is a separate step. [Allot](https://github.com/aline-no/allot) (private for now) raises an existing app one level at a time. Level 1 (Guarded) adds the full test gate in remote CI, secret scanning, a dependency audit with an expiring allowlist, SHA-pinned Actions and a PR body check. Level 2 (Production) adds separate environments, promotion and rollback.
